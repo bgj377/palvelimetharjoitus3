@@ -37,10 +37,13 @@ $ nano lueminut
 :Lisää virheellistä tekstiä  
 $ git add .
 
-Pyyhitään virheellinen teksti komennolla  
-$ git reset --hard
+Pyyhitään virheellinen teksti reset komennolla ja katsotaan löytyykö virheellinen teksti edelleen  
+$ git reset --hard  
+$ cat lueminut
 
 ![hardi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/hard2.JPG)
+
+Virheellinen teksti on poistunut tiedostosta.
 
 **f) Tee uusi salt-moduli. Voit asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot**
 
@@ -63,6 +66,8 @@ $ sudo systemctl restart smbd
 
 Tarkistetaan toimiiko Samban smbd demoni  
 $ sudo service smbd status
+
+![statsi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/samba-status1.JPG)
 
 Halutaan, että moduli hallitsee konfigurointitiedostoa, joten kopioidaan se saltin kansioon /srv/salt  
 $ sudo cp /etc/samba/smb.conf /srv/salt/
@@ -95,7 +100,11 @@ sambaservice:
 &nbsp; &nbsp; &nbsp; &nbsp; -- name: smbd  
 &nbsp; &nbsp; &nbsp; &nbsp; -- restart: True  
     
-Otetaan init.sls käyttöön kaikille orjille  
+Otetaan init.sls käyttöön kaikille orjille ja katsotaan miten onnistuu  
 $ sudo salt '*' state.apply samba
 
+![onni](https://github.com/bgj377/palvelimetharjoitus3/blob/main/samba-onnistuminen.JPG)
 
+$ find -printf “%T+ %p\n”|sort
+
+![asetus](https://github.com/bgj377/palvelimetharjoitus3/blob/main/asetustiedostot.JPG)
