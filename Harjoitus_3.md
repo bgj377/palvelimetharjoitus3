@@ -17,6 +17,8 @@ $ git commit
 Toistetaan kirjoita ja tallenna prosessia muutaman kerran ja viimeisellä kierroksella annettaan add . komento, mutta ei committia. Annetaan git log komento, joka näyttää eri commit komentojen ajankohdat ja kohdetiedoston
 $ git log
 
+![logi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/gitlog.JPG)
+
 Seuraavaksi annetaan diff komento, joka näyttää mitä muutoksia lueminut-tiedostoon on tehty add . komennolla viimeisen commit komennon jälkeen.
 $ git diff
 
