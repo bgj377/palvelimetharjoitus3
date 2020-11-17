@@ -19,7 +19,7 @@ $ git log
 
 ![logi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/gitlog.JPG)
 
-Seuraavaksi annetaan diff komento, joka näyttää mitä muutoksia lueminut-tiedostoon on tehty add . komennolla viimeisen commit komennon jälkeen.  
+Seuraavaksi annetaan diff komento, joka näyttää mitä muutoksia lueminut-tiedostoon on tehty add . komennolla viimeisen commit komennon jälkeen. Vihreä +-alkuinen teksti kertoo mitä on tullut lisää.
 $ git diff
 
 ![diffi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/gitdiff.JPG)
