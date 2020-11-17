@@ -2,11 +2,11 @@
 
 **d) Näytä omalla git-varastollasi esimerkit komennoista ‘git log’, ‘git diff’ ja ‘git blame’. Selitä tulokset.**
 
-Luodaan uusi GIT-versionhallinnan säilytyspaikka eli kansio
+Luodaan uusi GIT-versionhallinnan säilytyspaikka eli kansio  
 $ git init varasto
 
-Siirrytään kansioon ja konfiguroidaan varasto siten, että tehdään tallennus "git commit" vain kun varastoon on tehty muutoksia:
-$ cd varasto
+Siirrytään kansioon ja konfiguroidaan varasto siten, että tehdään tallennus "git commit" vain kun varastoon on tehty muutoksia:  
+$ cd varasto  
 $ git add . && git commit ; git pull && git push
 
 Tehdään Nanolla lueminut-tiedosto ja kirjoitetaan siihen tekstiä. Tallennetaan muutokset.
