@@ -22,8 +22,12 @@ $ git log
 Seuraavaksi annetaan diff komento, joka näyttää mitä muutoksia lueminut-tiedostoon on tehty add . komennolla viimeisen commit komennon jälkeen.
 $ git diff
 
+![diffi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/gitdiff.JPG)
+
 Viimeisenä annetaan blame komento, joka näyttää viimeisen muutoksen, joka tiedoston lueminut kullekkin riville tehtiin
 $ git blame lueminut
+
+![blamemi](https://github.com/bgj377/palvelimetharjoitus3/blob/main/gitblame.JPG)
 
 **e) Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset –hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.**
 
@@ -71,6 +75,7 @@ Luodaan init.sls moduli, joka asentaa Samban. Modulin avulla salt-kansiossa olev
 
 $ sudoedit /srv/salt/samba/init.sls
 samba:
+
 &nbsp; &nbsp; pkg.installed
 
 smbd:
